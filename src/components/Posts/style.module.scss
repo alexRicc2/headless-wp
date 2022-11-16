@@ -1,0 +1,84 @@
+.Posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 75px 0;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        gap: 5.5rem;
+        .Post{
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+            @media(max-width: 800px){
+                flex-direction: column;
+            }
+            img{
+                width: 50%;
+                @media(max-width: 800px){
+                    width: 100%;
+                }
+            }
+            .texto{
+                width: 48%;
+                @media(max-width: 800px){
+                    width: 100%;
+                }
+                display: flex;
+                flex-direction: column;
+                gap: 1.4rem;
+                line-height: 1.8;
+                letter-spacing: .05rem;
+                span{
+                    color: #fc0;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #000;
+                }
+                p{
+                    font-size: 13px;
+                    color: #7a7a7a;
+                }
+                .autorDate{
+                    display: flex;
+                    gap: 1rem;
+                    font-size: 13px;
+                    color: #7a7a7a;
+                    .autor{
+                        align-items: center;
+                        display: flex;
+                        gap: .4rem;
+                    }
+                    img{
+                        width: 20px;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    button{
+        background-color: #fc0;
+        border: none;
+        padding: 20px 200px;
+        color: #000;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 2px;
+        margin-top: 80px;
+        display: block;
+        cursor: pointer;
+        @media(max-width: 800px){
+            padding: 10px 75px;
+        }
+    }
+}

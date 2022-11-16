@@ -1,0 +1,63 @@
+.posthero{
+    padding: 150px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #7a7a7a1c;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        text-transform: uppercase;
+        font-size: 64px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        @media(max-width: 1024px){
+            font-size: 40px;
+        }
+        @media(max-width: 700px){
+            font-size: 24px;
+        }
+        span{
+            text-decoration: underline #fc0;
+        }
+    }
+    p{
+        color: #54595f;
+        font-size: 18px;
+        line-height: 2;
+        margin-bottom: 40px;
+        @media(max-width: 700px){
+            font-size: 14px;
+        }
+    }
+    .inputContainer{
+        display: flex;
+        width: 70%;
+        max-width: 700px;
+        @media(max-width: 1025px){
+            width: 100%;
+        }
+        input{
+            padding: 7px 20px;
+            border: 1px solid #7a7a7a63;
+            width: 100%;
+            outline: none;
+            font-size: 18px;
+            color: #7a7a7a63;
+            background-color: #fff0;
+        }   
+        button{
+            padding: 5px;
+            background-color: #fc0;
+            border: 1px solid #fc0;
+            min-height: 60px;
+            width: 270px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    
+    }
+    
+}

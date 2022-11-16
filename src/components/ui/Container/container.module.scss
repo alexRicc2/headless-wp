@@ -1,0 +1,8 @@
+.Container{
+    max-width: 99.25rem;
+    margin: auto;
+    padding: 0 8rem;
+    @media(max-width: 1100px){
+        padding: 0 1rem;
+    }
+}
